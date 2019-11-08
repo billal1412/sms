@@ -1,8 +1,12 @@
+#_*_coding=UTF-8_*_
 try:
 	import sys,requests,os,mechanize
 	from bs4 import BeautifulSoup as bs
+	if sys.version[0]=="2":
+		print ("  Warning(INFO): gunakan python 3.7")
+		sys.exit()
 except Exception as E:
-	print ("Warning(ERROR): %s"%(E))
+	print ("  Warning(ERROR): %s"%(E))
 	sys.exit()
 class sms:
 	def __init__(self):
@@ -43,7 +47,10 @@ class sms:
   {K}ode Keamanan : x = kali
                   : + = tambah
                   : - = kurang
-                  : / = bagi""")
+                  : / = bagi
+================================================
+            © 2019 Billal Fauzan
+================================================""")
 	def settings(self):
 		try:
 			print ("\n Nomor HP Target ")
